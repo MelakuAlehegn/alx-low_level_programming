@@ -4,6 +4,6 @@ include<stdio.h>
  * return value must be zero
  */
 int main(void){
-printf("\n"with proper grammer, but the outcome is a piece of art,");
-return (0);
+	printf("with proper grammer, but the outcome is a piece of art,\n");
+	return (0);
 }
