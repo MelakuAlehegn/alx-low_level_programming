@@ -1,8 +1,8 @@
-#include <stdio.h>
-/** 
- *main: starting point
+include <studio.h>
+/**
+ *main: starting poing
  *
- *return: Always return zero 
+ *return: Always returns zero
  */
 int main(void){
 puts("\"Programming is like building a multilingual puzzle");
