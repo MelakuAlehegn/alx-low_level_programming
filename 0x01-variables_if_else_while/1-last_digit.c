@@ -7,7 +7,7 @@
  *
  *Return: 0
  *
- *Descripitions: Assign and Print the last digit of the number stored in the variable
+ *Descripitions: Print the last digit of the number stored in the variable
  */
 
 int main(void)
