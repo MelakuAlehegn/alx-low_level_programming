@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-/*
- *main - Starting Point
+/**
+ *main - Starting point
  *
- *Return: 0
+ *Return: zero
  *
- *Description: Prints single digit numbers
+ *Descripitions: Prints single digit number
  */
 
 int main(void)
 {
-  int num;
-  
-  for(num = 0; num <= 9; num++)
-  printf("%d", num);
-  printf("\n");
-  
-  return (0);
+	int num;
+
+	for (num = 0; num <= 9; num++)
+	printf("%d", num);
+	printf("\n");
+
+	return (0);
 }
