@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+11;rgb:0000/0000/0000
 /**
 * main - causes an infinite loop
 * Return: 0
@@ -17,8 +17,8 @@ int main(void)
 	 *{
 	 *      putchar(i);
 	 *}
-	 *
-	 *printf("Infinite loop avoided! \\o/\n");
 	 */
+	 printf("Infinite loop avoided! \\o/\n");
+	 
 	 return (0);
 }
