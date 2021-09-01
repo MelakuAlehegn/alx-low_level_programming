@@ -1,17 +1,16 @@
-#include <main.h>
+#include "main.h"
 
 /**
- *main - Starting point
- *
+ *main - test a function if a given number is zero
  *Return: 0
- *
  */
 
 int main(void)
 {
- int a;
- a = 0;
- positive_or_negative(a);
-  
-  return(0);
+	int i;
+
+	i = 0;
+	positive_or_negative(i);
+
+	return (0);
 }
