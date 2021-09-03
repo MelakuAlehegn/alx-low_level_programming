@@ -2,8 +2,7 @@
 
 /**
  *_isupper - Checks for uppercase character
- *@c: Input char
- *Return: (1) if c is uppercase and 0 otherwise
+ *Return: 1 if c is digit and 0 otherwise
  */
 
 int _isdigit(int c)
