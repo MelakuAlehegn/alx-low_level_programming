@@ -2,14 +2,12 @@
 
 /**
  *reset_to_98 - Updates the value of a pointer to 98
+ *@n: Input
  *Return: Nothing
  */
 
 void reset_to_98(int *n)
 {
-  int var = 98;
-  n = &var;
-  
-  return (0);
+  *n = 98;
 }
  
