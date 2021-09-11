@@ -3,13 +3,13 @@
 /**
  *_islower - checks for lowercase
 *
- *Return: Always 0.
+*@c: checker
+ *Return: 1 if lowercase 0 otherwise
  */
 
 int _islower(int c)
 {
-
-if (alpa >= 'a' && alpa <= 'z')
+if (c >= 97 && alpa <= 122)
 {
 return(1);
 }
