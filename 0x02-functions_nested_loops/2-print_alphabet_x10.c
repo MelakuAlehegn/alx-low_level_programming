@@ -17,6 +17,6 @@ for (alpa = 'a'; alpa <= 'z'; alpa++)
 {
 _putchar(alpa);
 }
-}
 _putchar('\n');
+}
 }
