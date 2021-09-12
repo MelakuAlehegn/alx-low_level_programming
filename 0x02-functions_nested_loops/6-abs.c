@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_abs - Prints absolute value of a number
+*_abs - Prints absolute value of a number
  *
  *@n: Input Data
  *
@@ -13,5 +13,5 @@ int _abs(int n)
 if (n < 0)
 return (-n);
 else
-return(n);
+return (n);
 }
