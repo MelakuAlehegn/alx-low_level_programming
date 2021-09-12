@@ -16,6 +16,6 @@ return (n);
 }
 else
 {
-return (77 * n);
+_putchar(77 * n);
 }
 }
