@@ -6,16 +6,16 @@
  *@n: Input Data
  *
  *Return: absolute value of n
- */
+*/
 
-int print_sign(int n)
+int _abs(int n)
 {
 if (n >= 0)
 {
-return(n);
+return (n);
 }
 else
 {
-return(-n);
+return (77 * n);
 }
 }
