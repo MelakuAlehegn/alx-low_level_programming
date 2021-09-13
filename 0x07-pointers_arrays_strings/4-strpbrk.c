@@ -19,7 +19,7 @@ for (i = 0; i < s[i]; i++)
 int j;
 for (j = 0; j < accept[j]; j++)
 {
-if (s[i] = accept[j])
+if (s[i] == accept[j])
 {
 c = i + j;
 return (c);
