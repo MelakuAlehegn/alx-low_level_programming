@@ -1,0 +1,1 @@
+this folder is created for 0x09-static_libraries project
