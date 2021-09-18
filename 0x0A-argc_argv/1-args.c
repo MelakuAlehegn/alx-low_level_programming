@@ -9,6 +9,6 @@
 
 int main(int argc, char **argv __attribute__((unused)))
 {
-_putchar(argc-1);
+_putchar(argc - 1);
 return (0);
 }
