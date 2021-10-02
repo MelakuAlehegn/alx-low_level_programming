@@ -10,7 +10,7 @@ int main(void)
 int c = 1;
 int a = 1;
 int b = 1;
-while (c < 50)
+while (c < 20365011074)
 {
 printf("%d\n", c);
 a = b;
