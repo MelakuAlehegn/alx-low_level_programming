@@ -12,7 +12,7 @@ int curnum = 1;
 int nextnum;
 
 printf("%d\n", curnum);
-while (num < 50)
+while (curnum < 50)
 {
 printf("%d\n", curnum);
 nextnum = curnum + oldnum;
