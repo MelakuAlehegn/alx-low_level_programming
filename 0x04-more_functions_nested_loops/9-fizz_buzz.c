@@ -8,7 +8,7 @@
 
 int main(void)
 {
-int n;
+int n = 0;
 while (n <= 100)
 {
 if (n % 15 == 0)
@@ -27,7 +27,7 @@ else
 {
 printf("%d ", n);
 }
-if (i < 100)
+if (n < 100)
 {
 printf(" ");
 }
