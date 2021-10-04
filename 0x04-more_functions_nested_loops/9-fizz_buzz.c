@@ -27,11 +27,11 @@ else
 {
 printf("%d ", n);
 }
-n++;
-}
 if (i < 100)
 {
 printf(" ");
+}
+n++;
 }
 printf("\n");
 return (0);
