@@ -1,5 +1,5 @@
 #include <stdio.h>
-11;rgb:0000/0000/0000#include "lists.h"
+#include "lists.h"
 
 /**
  *print_listint - prints elements of listint_t
