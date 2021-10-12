@@ -3,9 +3,10 @@
 
 /**
  *print_listint - prints elements of listint_t
- *@h: list
+ *@h: list to print
  *Return: the number of nodes
- **/
+ */
+
 size_t print_listint(const listint_t *h)
 {
 size_t num = 0;
