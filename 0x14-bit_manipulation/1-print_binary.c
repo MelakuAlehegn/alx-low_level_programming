@@ -9,9 +9,16 @@
 
 void print_binary(unsigned long int n)
 {
-if (n > 1)
+int k = 32;
+while (k != 0)
 {
-print_binary(n >> 1);
+if (n & 0x01 != 0)
+{
+printf("1");
 }
-printf("%d", n & 1);
+else
+printf("0");
+}
+k--;
+n >> = 1;
 }
