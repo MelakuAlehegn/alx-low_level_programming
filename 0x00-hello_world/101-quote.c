@@ -1,7 +1,6 @@
 /**
  * main - Start
  *
- * Return: Always 1
  * Return: Always 1 (Error)
  */
 #include<stdio.h>
