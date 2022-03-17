@@ -1,19 +1,19 @@
 #include "main.h"
+
 /**
- * print_numbers - prints numbers from 0 to 9
- *
- * Return: nothing
+ *print_numbers - Prints numbers from 0 to 9
+ *Return: Nothing return
  */
 
 void print_numbers(void)
 {
-	int i
-	i = 48;
+	int n;
 
-	while (i <= 57)
+	n = 48;
+	while (n <= 57)
 	{
-		_putchar(i);
-		i++;
+		_putchar(n);
+		n++;
 	}
 	_putchar('\n');
 }
