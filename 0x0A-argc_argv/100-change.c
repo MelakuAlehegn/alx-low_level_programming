@@ -1,53 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - Prints the minimum number of coins to
- *        make change for an amount of money.
- * @argc: The number of arguments
- * @argv: An array pointers to the arguments.
- *
- * Return: If the number of arguments is not exactly one - 1.
- *         Otherwise - 0.
+ * main - A proogram that prints the minimum number of coins to
+ * make change for an amount of money
+ * @argc: The arguements' counter
+ * @argv: The argument's values
+ * Return: 1 if the number of arguments passed is not exactly
+ * or 0 in otherwise
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int cents, coins = 0;
+	int amount, coins = 0;
 
-	cents = atoi(argv[1]);
-
-	if (argc != 2)
+	if (argc == 2)
+	{
+		amount = atoi(argv[1]);
+		if (amount < 0)
+		{
+			printf("%d\n", 0);
+			return (0);
+		}
+		if (amount % 25 >= 0)
+		{
+			coins += amount / 25;
+			amount = amount % 25;
+		}
+		if (amount % 10 >= 0)
+		{
+			coins += amount / 10;
+			amount = amount % 10;
+		}
+		if (amount % 5 >= 0)
+		{
+			coins += amount / 5;
+			amount = amount % 5;
+		}
+		if (amount % 2 >= 0)
+		{
+			coins += amount / 2;
+			amount = amount % 2;
+		}
+		if (amount % 1 >= 0)
+			coins += amount;
+		printf("%d\n", coins);
+		return (0);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	while (cents > 0)
-	{
-		coins++;
-		if ((cents - 25) >= 0)
-		{
-			cents -= 25;
-			continue;
-		}
-		if ((cents - 10) >= 0)
-		{
-			cents -= 10;
-			continue;
-		}
-		if ((cents - 5) >= 0)
-		{
-			cents -= 5;
-			continue;
-		}
-		if ((cents - 2) >= 0)
-		{
-			cents -= 2;
-			continue;
-		}
-		cents--;
-	}
-
-	printf("%d\n", coins);
-
-	return (0);
 }
