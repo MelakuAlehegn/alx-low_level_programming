@@ -1,48 +1,50 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- **argstostr - Concatenates all the arguments of your program
- *@ac: Argument count
- *@av: Argument vactor
- *Return: (NULL) if ac == 0 or av == NULL
- *Returns a pointer to a new string, or NULL if it fails
+ * strtow - A function that splits a string into words
+ * @str: An input pointer of the string to split
+ * Return: Apointer to concatened strings or NULL if it str is NULL
  */
-
-char *argstostr(int ac, char **av)
+char **strtow(char *str)
 {
-	char *x, *newstr;
-	int i, j, length;
+	char **array;
+	int i = 0, j, m, k = 0, len = 0, count = 0;
 
-	if (ac == 0 || av == NULL)
-	{
+	if (str == NULL || *str == '\0')
 		return (NULL);
-	}
-
-	for (i = 0, length = 0; i < ac; i++)
+	for (; str[i]; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++, length++)
-			;
-		length++;
+		if ((str[i] != ' ' || *str != '\t') &&
+				((str[i + 1] == ' ' || str[i + 1] == '\t') || str[i + 1] == '\n'))
+			count++;
 	}
-	length++;
-
-	x = malloc(length * sizeof(char));
-	if (x == NULL)
-	{
+	if (count == 0)
 		return (NULL);
-	}
-
-	newstr = x;
-	for (i = 0; i < ac; i++)
+	array = malloc(sizeof(char *) * (count + 1));
+	if (array == NULL)
+		return (NULL);
+	for (i = 0; str[i] != '\0' && k < count; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		if (str[i] != ' ' || str[i] != '\t')
 		{
-			*x = av[i][j];
-			x++;
+			len = 0;
+			j = i;
+			while ((str[j] != ' ' || str[j] != '\t') && str[j] != '\0')
+				j++, len++;
+			array[k] = malloc((len + 1) * sizeof(char));
+			if (array[k] == NULL)
+			{
+				for (k = k - 1; k >= 0; k++)
+					free(array[k]);
+				free(array);
+				return (NULL);
+			}
+			for (m = 0; m < len; m++, i++)
+				array[k][m] = str[i];
+			array[k++][m] = '\0';
 		}
-		*x = '\n';
-		x++;
 	}
-
-	return (newstr);
+	array[k] = NULL;
+	return (array);
 }
