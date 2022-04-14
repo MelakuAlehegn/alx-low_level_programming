@@ -4,9 +4,9 @@
 #include <stdio.h>
 
 /**
-*void print_numbers - prints numbers followed by a new line.
-* @n: number
- *
+ * print_numbers - prints numbers followed by a new line.
+ * @n: number
+ *@separator: separator string
  * Return: number
  */
 
