@@ -4,9 +4,9 @@ OBJ = ${SRC:.c=.o}
 NAME = school
 RM = rm -f
 
-all:
+all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
-clear:
+clean:
 	${RM} *~ ${NAME}
 oclean:
 	${RM} ${OBJ}
